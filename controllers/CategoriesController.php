@@ -46,6 +46,11 @@ class CategoriesController extends Controller
         return $this->asJson($allCategoryWithNews);
     }
 
+    public function actionAll(): object
+    {
+        return $this->asJson(Categories::getAll());
+    }
+
     /**
     * @throws NotFoundHttpException
     */
