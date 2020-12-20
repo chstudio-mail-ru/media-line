@@ -52,8 +52,10 @@ class CategoriesController extends Controller
     }
 
     /**
-    * @throws NotFoundHttpException
-    */
+     * @param int $categoryId
+     * @return object
+     * @throws NotFoundHttpException
+     */
     public function actionId(int $categoryId): object
     {
         $categoryDataById = Categories::findById($categoryId);
