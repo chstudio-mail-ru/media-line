@@ -61,9 +61,7 @@ class m201214_194316_categories extends Migration
      */
     public function safeDown()
     {
-        echo "m201214_194316_categories cannot be reverted.\n";
-
-        return false;
+        $this->dropTable('categories');
     }
 
     /*

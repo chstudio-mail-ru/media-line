@@ -68,9 +68,7 @@ class m201214_194445_news_categories extends Migration
      */
     public function safeDown()
     {
-        echo "m201214_194445_news_categories cannot be reverted.\n";
-
-        return false;
+        $this->dropTable('news_categories');
     }
 
     /*

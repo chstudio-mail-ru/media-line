@@ -54,9 +54,7 @@ class m201214_192620_news extends Migration
      */
     public function safeDown()
     {
-        echo "m201214_192620_news cannot be reverted.\n";
-
-        return false;
+        $this->dropTable('news');
     }
 
     /*
